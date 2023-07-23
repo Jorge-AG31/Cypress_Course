@@ -1,0 +1,24 @@
+Comandos:
+
+1.- node --version
+2.- npm init
+3.- npm install cypress --save-dev  //INSTALACIÓN
+// SI FALLA LA INSTALACIÓN
+3.1.- npm install -g npx // instalación de npx  https://www.npmjs.com/package/npx  (mas rápido que 'npm' para trabajar con scripts)
+3.2.- npx cypress install --force  // para forzar la instalación
+4.- node_modules\.bin\cypress open
+5.- npx cypress open //Iniciar la app o administrador de proyectos
+
+Comandos de Consola:
+
+// Para ejecutar y mostrar todos los test en la consola, se emplea el comando: 'npx cypress run' (o 'node_modules\.bin\cypress run')
+// Para ejecutar y mostrar todos los test en el navegador predeterminado, se emplea el comando: 'npx cypress run --headed'
+// Para ejecutar y mostrar todos los test en un navegador concreto, se emplea el comando: 'npx cypress run --browser firefox'
+// Para ejecutar y mostrar un test concreto en la consola, se emplea el comando: 'npx cypress run --spec "cypress\e2e\JavaScript\Asserts.cy.js"'
+// Para ejecutar y mostrar una sección con varios test en la consola, se emplea el comando: 'npx cypress run --spec "cypress\e2e\JavaScript\*"'
+
+npx cypress run --spec "cypress\e2e\pageObject.cy.js"  // permite ejecutar tests y grabar la ejecución en archivo mp4 (también lanza un screenshot, si se utiliza el comando: 'cy.screenshot')
+
+
+    
+

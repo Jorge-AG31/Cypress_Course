@@ -1,0 +1,7 @@
+npx cypress run --record --key fc295b57-d375-4c7d-885f-1c25561bdb22
+
+<<<<<<< HEAD
+Trato de modificar en local
+=======
+Texto añadido desde GitHub
+>>>>>>> 2194c4da35918a3e3f713abf5972f4a91b4c241b

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+</head>
+<body>
+    <h1>Template</h1>
+
+    <script>
+        // hacer una promesa
+        
+        var x = 5;
+
+        let process_1 = console.log("Este es proceso 1");
+        let process_2 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                let calculo = x*2+10;
+               console.log("Este es el proceso 2");
+               resolve(calculo);
+            },2000);
+        });       
+        
+        process_2.then(res => console.log("Este es el proceso 3", "El resultado del cálculo es: "+res));
+    </script>
+</body>
+</html>
